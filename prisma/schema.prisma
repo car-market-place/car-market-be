@@ -1,0 +1,145 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================================================
+// ENUMS
+// ==================================================
+enum UserRole {
+  USER
+  MODERATOR
+  ADMIN
+}
+
+enum Transmission {
+  MANUAL      // Số sàn
+  AUTOMATIC   // Số tự động
+  CVT         // Hộp số vô cấp
+  DCT         // Ly hợp kép
+  AMT         // Số sàn tự động
+}
+
+enum ListingStatus {
+  DRAFT      // Nháp
+  PENDING    // Chờ duyệt
+  APPROVED   // Đã duyệt
+  REJECTED   // Bị từ chối
+  PUBLISHED  // Đang hiển thị
+  SOLD       // Đã bán
+  EXPIRED    // Hết hạn
+  ARCHIVED   // Đã lưu trữ
+}
+
+enum FuelType {
+  GASOLINE    // Xăng
+  DIESEL      // Dầu
+  HYBRID      // Hybrid
+  PLUG_IN_HYBRID // Plug-in Hybrid (PHEV)
+  ELECTRIC    // Điện
+  LPG         // Gas (LPG)
+  CNG         // Khí thiên nhiên nén
+}
+
+enum BodyType {
+  SEDAN
+  HATCHBACK
+  SUV
+  CROSSOVER
+  COUPE
+  CONVERTIBLE
+  WAGON
+  PICKUP
+  VAN
+  MINIVAN
+  MPV
+}
+
+enum DriveType {
+  FWD   // Cầu trước
+  RWD   // Cầu sau
+  AWD   // Dẫn động 4 bánh toàn thời gian
+  FOUR_WD // 4WD/Bán thời gian
+}
+
+enum HistoryAction {
+  CREATED          // User tạo tin
+  UPDATED          // User cập nhật tin
+  SUBMITTED        // Gửi duyệt
+  APPROVED         // Admin duyệt
+  REJECTED         // Admin từ chối
+  ACTIVATED        // Tin được hiển thị
+  EXPIRED          // Hết hạn
+  SOLD             // Người bán đánh dấu đã bán
+  BOOSTED          // Áp dụng gói VIP/Boost
+  RESTORED         // Khôi phục tin
+  DELETED          // Xóa mềm
+  PERMANENT_DELETE // Xóa vĩnh viễn
+}
+
+enum ReportReason {
+  SOLD                 // Xe đã bán nhưng vẫn đăng
+  DUPLICATE            // Tin trùng lặp
+  FAKE_INFORMATION     // Thông tin sai sự thật
+  FRAUD                // Lừa đảo
+  WRONG_PRICE          // Giá không đúng
+  WRONG_CATEGORY       // Sai danh mục
+  COPYRIGHT            // Vi phạm bản quyền
+  SPAM                 // Spam
+  INAPPROPRIATE        // Nội dung không phù hợp
+  OTHER                // Khác
+}
+
+enum ReportStatus {
+  PENDING      // Chờ xử lý
+  REVIEWING    // Đang xem xét
+  RESOLVED     // Đã xử lý
+  REJECTED     // Báo cáo không hợp lệ
+}
+
+enum BoostType {
+  FEATURED      // Tin nổi bật
+  TOP           // Đẩy lên đầu
+  VIP           // VIP
+  PREMIUM       // Premium
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+// ==================================================
+// MODELS
+// ==================================================
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  password  String
+  name      String?
+  role      Role     @default(USER)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  refreshTokens RefreshToken[]
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+}

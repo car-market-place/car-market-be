@@ -1,0 +1,17 @@
+-- CreateEnum
+CREATE TYPE "UserRole" AS ENUM ('USER', 'MODERATOR', 'ADMIN');
+
+-- CreateEnum
+CREATE TYPE "Transmission" AS ENUM ('MANUAL', 'AUTOMATIC', 'CVT', 'DCT', 'AMT');
+
+-- CreateEnum
+CREATE TYPE "ListingStatus" AS ENUM ('DRAFT', 'PENDING', 'APPROVED', 'REJECTED', 'PUBLISHED', 'SOLD', 'EXPIRED', 'ARCHIVED');
+
+-- CreateEnum
+CREATE TYPE "FuelType" AS ENUM ('GASOLINE', 'DIESEL', 'HYBRID', 'PLUG_IN_HYBRID', 'ELECTRIC', 'LPG', 'CNG');
+
+-- CreateEnum
+CREATE TYPE "BodyType" AS ENUM ('SEDAN', 'HATCHBACK', 'SUV', 'CROSSOVER', 'COUPE', 'CONVERTIBLE', 'WAGON', 'PICKUP', 'VAN', 'MINIVAN', 'MPV');
+
+-- CreateEnum
+CREATE TYPE "DriveType" AS ENUM ('FWD', 'RWD', 'AWD', 'FOUR_WD');
