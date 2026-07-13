@@ -1,20 +1,17 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { BodyType, DriveType, FuelType, Transmission } from '@prisma/client';
 import { Type } from 'class-transformer';
 import {
   IsDateString,
   IsEmail,
-  IsEnum,
   IsInt,
   IsNumber,
   IsOptional,
-  IsPositive,
   IsString,
   IsUUID,
-  Max,
   MaxLength,
-  Min,
+  ValidateNested,
 } from 'class-validator';
+import { CarSpecificationDto } from './car-specification';
 
 export class CreateListingDto {
   @ApiProperty()
@@ -51,55 +48,17 @@ export class CreateListingDto {
   @ApiProperty()
   @Type(() => Number)
   @IsInt()
-  @Min(1950)
-  @Max(new Date().getFullYear() + 1)
   year: number;
 
   @ApiProperty()
   @Type(() => Number)
   @IsInt()
-  @Min(0)
   mileage: number;
 
   @ApiProperty()
   @Type(() => Number)
   @IsNumber()
-  @IsPositive()
   price: number;
-
-  @ApiProperty({ enum: Transmission })
-  @IsEnum(Transmission)
-  transmission: Transmission;
-
-  @ApiProperty({ enum: FuelType })
-  @IsEnum(FuelType)
-  fuelType: FuelType;
-
-  @ApiProperty({ enum: BodyType })
-  @IsEnum(BodyType)
-  bodyType: BodyType;
-
-  @ApiPropertyOptional({ enum: DriveType })
-  @IsOptional()
-  @IsEnum(DriveType)
-  driveType?: DriveType;
-
-  @ApiPropertyOptional()
-  @IsOptional()
-  @IsString()
-  color?: string;
-
-  @ApiPropertyOptional()
-  @Type(() => Number)
-  @IsOptional()
-  @IsInt()
-  seats?: number;
-
-  @ApiPropertyOptional()
-  @Type(() => Number)
-  @IsOptional()
-  @IsInt()
-  doors?: number;
 
   @ApiPropertyOptional()
   @IsOptional()
@@ -118,6 +77,14 @@ export class CreateListingDto {
   @IsOptional()
   @IsEmail()
   contactEmail?: string;
+
+  @ApiPropertyOptional({
+    type: () => CarSpecificationDto,
+  })
+  @ValidateNested()
+  @Type(() => CarSpecificationDto)
+  @IsOptional()
+  specification?: CarSpecificationDto;
 
   @ApiProperty()
   @IsDateString()

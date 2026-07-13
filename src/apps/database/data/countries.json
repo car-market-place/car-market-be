@@ -1,0 +1,114 @@
+[
+  {
+    "code": "VN",
+    "code3": "VNM",
+    "name": "Việt Nam",
+    "nameEn": "Vietnam",
+    "slug": "viet-nam"
+  },
+  {
+    "code": "JP",
+    "code3": "JPN",
+    "name": "Nhật Bản",
+    "nameEn": "Japan",
+    "slug": "japan"
+  },
+  {
+    "code": "KR",
+    "code3": "KOR",
+    "name": "Hàn Quốc",
+    "nameEn": "South Korea",
+    "slug": "south-korea"
+  },
+  {
+    "code": "US",
+    "code3": "USA",
+    "name": "Hoa Kỳ",
+    "nameEn": "United States",
+    "slug": "united-states"
+  },
+  {
+    "code": "DE",
+    "code3": "DEU",
+    "name": "Đức",
+    "nameEn": "Germany",
+    "slug": "germany"
+  },
+  {
+    "code": "GB",
+    "code3": "GBR",
+    "name": "Vương quốc Anh",
+    "nameEn": "United Kingdom",
+    "slug": "united-kingdom"
+  },
+  {
+    "code": "FR",
+    "code3": "FRA",
+    "name": "Pháp",
+    "nameEn": "France",
+    "slug": "france"
+  },
+  {
+    "code": "IT",
+    "code3": "ITA",
+    "name": "Ý",
+    "nameEn": "Italy",
+    "slug": "italy"
+  },
+  {
+    "code": "SE",
+    "code3": "SWE",
+    "name": "Thụy Điển",
+    "nameEn": "Sweden",
+    "slug": "sweden"
+  },
+  {
+    "code": "CN",
+    "code3": "CHN",
+    "name": "Trung Quốc",
+    "nameEn": "China",
+    "slug": "china"
+  },
+  {
+    "code": "IN",
+    "code3": "IND",
+    "name": "Ấn Độ",
+    "nameEn": "India",
+    "slug": "india"
+  },
+  {
+    "code": "TH",
+    "code3": "THA",
+    "name": "Thái Lan",
+    "nameEn": "Thailand",
+    "slug": "thailand"
+  },
+  {
+    "code": "ID",
+    "code3": "IDN",
+    "name": "Indonesia",
+    "nameEn": "Indonesia",
+    "slug": "indonesia"
+  },
+  {
+    "code": "MY",
+    "code3": "MYS",
+    "name": "Malaysia",
+    "nameEn": "Malaysia",
+    "slug": "malaysia"
+  },
+  {
+    "code": "SG",
+    "code3": "SGP",
+    "name": "Singapore",
+    "nameEn": "Singapore",
+    "slug": "singapore"
+  },
+  {
+    "code": "CZ",
+    "code3": "CZE",
+    "name": "Cộng hòa Séc",
+    "nameEn": "Czech Republic",
+    "slug": "czech-republic"
+  }
+]
