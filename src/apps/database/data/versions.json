@@ -1,0 +1,1431 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Vios",
+    "versions": [
+      {
+        "name": "E MT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "E CVT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "G CVT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GR-S CVT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Toyota",
+    "model": "Corolla Cross",
+    "versions": [
+      {
+        "name": "1.8G",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.8V",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.8HEV",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "versions": [
+      {
+        "name": "2.4 MT 4x2",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "2.4 AT 4x2",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "2.7 AT 4x2",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Legender 2.4 AT 4x2",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Legender 2.8 AT 4x4",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Accent",
+    "versions": [
+      {
+        "name": "1.5 MT Tiêu chuẩn",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 AT Đặc biệt",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 AT Cao cấp",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta",
+    "versions": [
+      {
+        "name": "1.5 Tiêu chuẩn",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Đặc biệt",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Cao cấp",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santa Fe",
+    "versions": [
+      {
+        "name": "2.5 Xăng Tiêu chuẩn",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "2.2 Dầu Cao cấp",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Calligraphy",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Kia",
+    "model": "Morning",
+    "versions": [
+      {
+        "name": "MT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "AT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GT-Line",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos",
+    "versions": [
+      {
+        "name": "1.5 Deluxe",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Luxury",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Premium",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mazda",
+    "model": "Mazda3",
+    "versions": [
+      {
+        "name": "1.5 Deluxe",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Luxury",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "1.5 Premium",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "versions": [
+      {
+        "name": "2.0 Deluxe",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "2.0 Luxury",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "2.5 Signature Premium",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "City",
+    "versions": [
+      {
+        "name": "G",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "L",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "RS",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "versions": [
+      {
+        "name": "E",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "G",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "RS",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "versions": [
+      {
+        "name": "L 1.5 Turbo",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "G 1.5 Turbo",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "RS Hybrid",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Honda",
+    "model": "HR-V",
+    "versions": [
+      {
+        "name": "G",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "L",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "RS",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Xforce",
+    "versions": [
+      {
+        "name": "GLX",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Exceed",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Premium",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Ultimate",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Xpander",
+    "versions": [
+      {
+        "name": "MT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "AT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "AT Premium",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Cross",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Outlander",
+    "versions": [
+      {
+        "name": "2.0 CVT",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "2.4 CVT Premium",
+        "yearFrom": 2020,
+        "yearTo": 2024,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Pajero Sport",
+    "versions": [
+      {
+        "name": "Diesel 4x2 AT",
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Diesel 4x4 AT",
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "model": "Ranger",
+    "versions": [
+      {
+        "name": "XL 2.0L 4x4 MT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "XLS 2.0L 4x2 AT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Sport 4x4 AT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Wildtrak 4x4 AT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Raptor",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "model": "Everest",
+    "versions": [
+      {
+        "name": "Sport 4x2 AT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Titanium 4x2 AT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Titanium+ 4x4 AT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Wildtrak",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "model": "Territory",
+    "versions": [
+      {
+        "name": "Trend",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Titanium",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Titanium X",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Ford",
+    "model": "Transit",
+    "versions": [
+      {
+        "name": "2.2L Diesel",
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "Premium",
+        "yearFrom": 2020,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 3",
+    "versions": [
+      {
+        "name": "Eco",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "Plus",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 5",
+    "versions": [
+      {
+        "name": "Plus",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 6",
+    "versions": [
+      {
+        "name": "Eco",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "Plus",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 7",
+    "versions": [
+      {
+        "name": "Base",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "Plus",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 8",
+    "versions": [
+      {
+        "name": "Eco",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "Plus",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "VinFast",
+    "model": "VF 9",
+    "versions": [
+      {
+        "name": "Eco",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "Plus",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "Nissan",
+    "model": "Almera",
+    "versions": [
+      {
+        "name": "MT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "CVT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "CVT Premium",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Nissan",
+    "model": "Navara",
+    "versions": [
+      {
+        "name": "EL 2WD",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "VL 4WD",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "PRO-4X",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "Nissan",
+    "model": "Terra",
+    "versions": [
+      {
+        "name": "S",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "V",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      },
+      {
+        "name": "VL",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "DIESEL"
+      }
+    ]
+  },
+  {
+    "brand": "Suzuki",
+    "model": "XL7",
+    "versions": [
+      {
+        "name": "GLX",
+        "yearFrom": 2020,
+        "yearTo": 2023,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Hybrid",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Ertiga",
+    "versions": [
+      {
+        "name": "MT",
+        "yearFrom": 2020,
+        "yearTo": 2022,
+        "transmission": "MANUAL",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "AT",
+        "yearFrom": 2020,
+        "yearTo": 2022,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Hybrid MT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "MANUAL",
+        "fuelType": "HYBRID"
+      },
+      {
+        "name": "Hybrid AT",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Jimny",
+    "versions": [
+      {
+        "name": "One Tone",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Two Tone",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Subaru",
+    "model": "Forester",
+    "versions": [
+      {
+        "name": "i-L",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "i-S EyeSight",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Subaru",
+    "model": "Outback",
+    "versions": [
+      {
+        "name": "2.5i-T EyeSight",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "MG",
+    "model": "ZS",
+    "versions": [
+      {
+        "name": "STD+",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "LUX+",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "MG",
+    "model": "HS",
+    "versions": [
+      {
+        "name": "1.5 Trophy",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "2.0 Trophy AWD",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "MG",
+    "model": "MG4 EV",
+    "versions": [
+      {
+        "name": "DEL",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      },
+      {
+        "name": "LUX",
+        "yearFrom": 2024,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "ELECTRIC"
+      }
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "model": "2008",
+    "versions": [
+      {
+        "name": "Active",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GT",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "model": "3008",
+    "versions": [
+      {
+        "name": "Active",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Allure",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Peugeot",
+    "model": "5008",
+    "versions": [
+      {
+        "name": "Active",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GT",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "versions": [
+      {
+        "name": "C200 Avantgarde",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "C300 AMG",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "versions": [
+      {
+        "name": "E180",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "E200 Exclusive",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "E300 AMG",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLC",
+    "versions": [
+      {
+        "name": "GLC 200 4MATIC",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "GLC 300 4MATIC",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "versions": [
+      {
+        "name": "320i Sport Line",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "320i M Sport",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "330i M Sport",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "versions": [
+      {
+        "name": "520i",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "530i M Sport",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "versions": [
+      {
+        "name": "xDrive20i",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "xDrive30i M Sport",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "versions": [
+      {
+        "name": "35 TFSI Advanced",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "40 TFSI S line",
+        "yearFrom": 2021,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "Q5",
+    "versions": [
+      {
+        "name": "45 TFSI quattro",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Audi",
+    "model": "Q7",
+    "versions": [
+      {
+        "name": "55 TFSI quattro",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Lexus",
+    "model": "ES",
+    "versions": [
+      {
+        "name": "ES250",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "ES300h",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Lexus",
+    "model": "NX",
+    "versions": [
+      {
+        "name": "NX350 F Sport",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "NX350h",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Lexus",
+    "model": "RX",
+    "versions": [
+      {
+        "name": "RX350 Premium",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "RX500h F Sport Performance",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC40",
+    "versions": [
+      {
+        "name": "B4 Ultimate",
+        "yearFrom": 2023,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "MILD_HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC60",
+    "versions": [
+      {
+        "name": "B5 AWD Ultimate",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "MILD_HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC90",
+    "versions": [
+      {
+        "name": "B6 AWD Ultimate",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "MILD_HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "MINI",
+    "model": "Cooper",
+    "versions": [
+      {
+        "name": "Cooper 3 Door",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Cooper S 3 Door",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover Evoque",
+    "versions": [
+      {
+        "name": "P250 R-Dynamic SE",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Defender",
+    "versions": [
+      {
+        "name": "110 P300",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "110 P400",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "MILD_HYBRID"
+      }
+    ]
+  },
+  {
+    "brand": "Porsche",
+    "model": "Macan",
+    "versions": [
+      {
+        "name": "Macan",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Macan T",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      },
+      {
+        "name": "Macan GTS",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "GASOLINE"
+      }
+    ]
+  },
+  {
+    "brand": "Jaguar",
+    "model": "F-PACE",
+    "versions": [
+      {
+        "name": "R-Dynamic SE",
+        "yearFrom": 2022,
+        "yearTo": 2026,
+        "transmission": "AUTOMATIC",
+        "fuelType": "MILD_HYBRID"
+      }
+    ]
+  }
+]

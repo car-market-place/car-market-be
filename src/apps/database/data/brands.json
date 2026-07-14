@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Toyota",
+    "slug": "toyota",
+    "country": "japan"
+  },
+  {
+    "name": "Honda",
+    "slug": "honda",
+    "country": "japan"
+  },
+  {
+    "name": "Mazda",
+    "slug": "mazda",
+    "country": "japan"
+  },
+  {
+    "name": "Hyundai",
+    "slug": "hyundai",
+    "country": "south-korea"
+  },
+  {
+    "name": "Kia",
+    "slug": "kia",
+    "country": "south-korea"
+  },
+  {
+    "name": "Ford",
+    "slug": "ford",
+    "country": "united-states"
+  },
+  {
+    "name": "Mitsubishi",
+    "slug": "mitsubishi",
+    "country": "japan"
+  },
+  {
+    "name": "Nissan",
+    "slug": "nissan",
+    "country": "japan"
+  },
+  {
+    "name": "Suzuki",
+    "slug": "suzuki",
+    "country": "japan"
+  },
+  {
+    "name": "Isuzu",
+    "slug": "isuzu",
+    "country": "japan"
+  },
+  {
+    "name": "VinFast",
+    "slug": "vinfast",
+    "country": "viet-nam"
+  },
+  {
+    "name": "Mercedes-Benz",
+    "slug": "mercedes-benz",
+    "country": "germany"
+  },
+  {
+    "name": "BMW",
+    "slug": "bmw",
+    "country": "germany"
+  },
+  {
+    "name": "Audi",
+    "slug": "audi",
+    "country": "germany"
+  },
+  {
+    "name": "Lexus",
+    "slug": "lexus",
+    "country": "japan"
+  },
+  {
+    "name": "Volvo",
+    "slug": "volvo",
+    "country": "sweden"
+  },
+  {
+    "name": "Peugeot",
+    "slug": "peugeot",
+    "country": "france"
+  },
+  {
+    "name": "MG",
+    "slug": "mg",
+    "country": "china"
+  },
+  {
+    "name": "Subaru",
+    "slug": "subaru",
+    "country": "japan"
+  },
+  {
+    "name": "Volkswagen",
+    "slug": "volkswagen",
+    "country": "germany"
+  },
+  {
+    "name": "Porsche",
+    "slug": "porsche",
+    "country": "germany"
+  },
+  {
+    "name": "Land Rover",
+    "slug": "land-rover",
+    "country": "united-kingdom"
+  },
+  {
+    "name": "Jaguar",
+    "slug": "jaguar",
+    "country": "united-kingdom"
+  },
+  {
+    "name": "MINI",
+    "slug": "mini",
+    "country": "united-kingdom"
+  },
+  {
+    "name": "Jeep",
+    "slug": "jeep",
+    "country": "united-states"
+  },
+  {
+    "name": "Chevrolet",
+    "slug": "chevrolet",
+    "country": "united-states"
+  },
+  {
+    "name": "Renault",
+    "slug": "renault",
+    "country": "france"
+  },
+  {
+    "name": "Skoda",
+    "slug": "skoda",
+    "country": "czech-republic"
+  },
+  {
+    "name": "BYD",
+    "slug": "byd",
+    "country": "china"
+  },
+  {
+    "name": "GWM",
+    "slug": "gwm",
+    "country": "china"
+  },
+  {
+    "name": "Haval",
+    "slug": "haval",
+    "country": "china"
+  },
+  {
+    "name": "Omoda",
+    "slug": "omoda",
+    "country": "china"
+  },
+  {
+    "name": "Jaecoo",
+    "slug": "jaecoo",
+    "country": "china"
+  },
+  {
+    "name": "Chery",
+    "slug": "chery",
+    "country": "china"
+  },
+  {
+    "name": "Wuling",
+    "slug": "wuling",
+    "country": "china"
+  },
+  {
+    "name": "Tesla",
+    "slug": "tesla",
+    "country": "united-states"
+  },
+  {
+    "name": "Ferrari",
+    "slug": "ferrari",
+    "country": "italy"
+  },
+  {
+    "name": "Lamborghini",
+    "slug": "lamborghini",
+    "country": "italy"
+  },
+  {
+    "name": "Bentley",
+    "slug": "bentley",
+    "country": "united-kingdom"
+  },
+  {
+    "name": "Rolls-Royce",
+    "slug": "rolls-royce",
+    "country": "united-kingdom"
+  },
+  {
+    "name": "Maserati",
+    "slug": "maserati",
+    "country": "italy"
+  },
+  {
+    "name": "McLaren",
+    "slug": "mclaren",
+    "country": "united-kingdom"
+  }
+]

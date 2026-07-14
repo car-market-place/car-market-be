@@ -1,0 +1,433 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model RefreshToken {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String
+  expiresAt DateTime
+  revoked   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model CarSpecification {
+  id               String           @id @default(uuid())
+  listingId        String           @unique
+  bodyType         BodyType
+  transmission     Transmission
+  fuelType         FuelType
+  driveType        DriveType
+  condition        CarCondition
+  exteriorColor    ExteriorColor
+  interiorColor    InteriorColor
+  steeringPosition SteeringPosition
+  seats            Int
+  doors            Int
+  engineCapacity   Int?
+  horsepower       Int?
+  listing          Listing          @relation(fields: [listingId], references: [id], onDelete: Cascade)
+}
+
+model ListingImage {
+  id        String      @id @default(uuid())
+  listingId String
+  imageUrl  String
+  type      ImageType
+  status    ImageStatus @default(APPROVED)
+  isPrimary Boolean     @default(false)
+  sortOrder Int         @default(0)
+  listing   Listing     @relation(fields: [listingId], references: [id], onDelete: Cascade)
+}
+
+model Favorite {
+  id        String   @id @default(uuid())
+  userId    String
+  listingId String
+  createdAt DateTime @default(now())
+  listing   Listing  @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, listingId])
+}
+
+model ReportListing {
+  id           String       @id @default(uuid())
+  listingId    String
+  reporterId   String
+  resolvedById String?
+  reason       ReportReason
+  status       ReportStatus @default(PENDING)
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  listing      Listing      @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  reporter     User         @relation("ReportedListings", fields: [reporterId], references: [id])
+  resolvedBy   User?        @relation("ResolvedReports", fields: [resolvedById], references: [id])
+}
+
+model ListingHistory {
+  id        String        @id @default(uuid())
+  listingId String
+  action    HistoryAction
+  userId    String?
+  note      String?
+  createdAt DateTime      @default(now())
+  listing   Listing       @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  user      User?         @relation(fields: [userId], references: [id])
+
+  @@index([listingId])
+  @@index([action])
+  @@index([createdAt])
+  @@map("listing_histories")
+}
+
+model ListingBoost {
+  id        String       @id @default(uuid())
+  listingId String
+  packageId String
+  userId    String
+  startAt   DateTime     @default(now())
+  expiredAt DateTime
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  listing   Listing      @relation(fields: [listingId], references: [id], onDelete: Cascade)
+  package   BoostPackage @relation(fields: [packageId], references: [id])
+  user      User         @relation(fields: [userId], references: [id])
+
+  @@index([listingId])
+  @@index([packageId])
+  @@index([userId])
+  @@index([expiredAt])
+  @@map("listing_boosts")
+}
+
+model BoostPackage {
+  id          String         @id @default(uuid())
+  name        String
+  type        BoostType
+  description String?
+  duration    Int
+  boostScore  Int
+  price       Decimal        @db.Decimal(18, 2)
+  isActive    Boolean        @default(true)
+  createdAt   DateTime       @default(now())
+  updatedAt   DateTime       @updatedAt
+  boosts      ListingBoost[]
+
+  @@index([type])
+  @@map("boost_packages")
+}
+
+model User {
+  id               String           @id @default(uuid())
+  email            String           @unique
+  password         String
+  name             String?
+  role             Role             @default(USER)
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+  favorites        Favorite[]
+  refreshTokens    RefreshToken[]
+  reportedListings ReportListing[]  @relation("ReportedListings")
+  resolvedReports  ReportListing[]  @relation("ResolvedReports")
+  listingBoosts    ListingBoost[]
+  histories        ListingHistory[]
+  approvedListings Listing[]        @relation("ApprovedListings")
+  listings         Listing[]
+}
+
+model CarModel {
+  id        String       @id @default(uuid())
+  brandId   String
+  name      String
+  slug      String
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+  brand     Brand        @relation(fields: [brandId], references: [id], onDelete: Cascade)
+  versions  CarVersion[]
+  listings  Listing[]
+
+  @@unique([brandId, slug])
+  @@index([brandId])
+}
+
+model CarVersion {
+  id        String    @id @default(uuid())
+  modelId   String
+  name      String
+  yearFrom  Int?
+  yearTo    Int?
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  model     CarModel  @relation(fields: [modelId], references: [id], onDelete: Cascade)
+  listings  Listing[]
+
+  @@unique([modelId, name])
+  @@index([modelId])
+}
+
+model Province {
+  id        String     @id @default(uuid())
+  code      String     @unique
+  name      String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  districts District[]
+  listings  Listing[]
+}
+
+model District {
+  id         String    @id @default(uuid())
+  provinceId String
+  code       String
+  name       String
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+  province   Province  @relation(fields: [provinceId], references: [id], onDelete: Cascade)
+  listings   Listing[]
+
+  @@unique([provinceId, code])
+  @@index([provinceId])
+}
+
+model Listing {
+  id             String            @id @default(uuid())
+  userId         String
+  brandId        String
+  modelId        String
+  versionId      String?
+  title          String
+  slug           String            @unique
+  description    String?
+  year           Int
+  mileage        Int
+  provinceId     String
+  districtId     String
+  address        String?
+  contactName    String
+  contactPhone   String
+  contactEmail   String?
+  status         ListingStatus     @default(DRAFT)
+  publishedAt    DateTime?
+  approvedAt     DateTime?
+  approvedById   String?
+  rejectedAt     DateTime?
+  rejectedReason String?
+  soldAt         DateTime?
+  deletedAt      DateTime?
+  viewCount      Int               @default(0)
+  favoriteCount  Int               @default(0)
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  featuredUntil  DateTime?
+  specification  CarSpecification?
+  favorites      Favorite[]
+  images         ListingImage[]
+  reports        ReportListing[]
+  boosts         ListingBoost[]
+  histories      ListingHistory[]
+  approvedBy     User?             @relation("ApprovedListings", fields: [approvedById], references: [id])
+  brand          Brand             @relation(fields: [brandId], references: [id])
+  district       District          @relation(fields: [districtId], references: [id])
+  model          CarModel          @relation(fields: [modelId], references: [id])
+  province       Province          @relation(fields: [provinceId], references: [id])
+  user           User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  version        CarVersion?       @relation(fields: [versionId], references: [id])
+
+  @@index([userId])
+  @@index([status])
+  @@index([brandId])
+  @@index([modelId])
+  @@index([provinceId])
+  @@index([districtId])
+  @@index([year])
+  @@index([createdAt])
+  @@index([publishedAt])
+  @@index([deletedAt])
+  @@index([status, publishedAt])
+  @@index([brandId, modelId])
+  @@index([provinceId, districtId])
+  @@map("listings")
+}
+
+model Country {
+  id        String @id @default(uuid())
+  code      String @unique
+  slug      String @unique
+  code3     String
+  name      String
+  nameEn    String
+
+  brands Brand[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Brand {
+  id        String     @id @default(uuid())
+  name      String     @unique
+  slug      String     @unique
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  models    CarModel[]
+  listings  Listing[]
+
+  countryId String
+  country   Country @relation(fields: [countryId], references: [id])
+}
+
+enum Transmission {
+  MANUAL
+  AUTOMATIC
+  CVT
+  DCT
+  AMT
+}
+
+enum ListingStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  PUBLISHED
+  SOLD
+  EXPIRED
+  ARCHIVED
+}
+
+enum FuelType {
+  GASOLINE
+  DIESEL
+  HYBRID
+  PLUG_IN_HYBRID
+  ELECTRIC
+  LPG
+  CNG
+}
+
+enum BodyType {
+  SEDAN
+  HATCHBACK
+  SUV
+  CROSSOVER
+  COUPE
+  CONVERTIBLE
+  WAGON
+  PICKUP
+  VAN
+  MINIVAN
+  MPV
+}
+
+enum DriveType {
+  FWD
+  RWD
+  AWD
+  FOUR_WD
+}
+
+enum HistoryAction {
+  CREATED
+  UPDATED
+  SUBMITTED
+  APPROVED
+  REJECTED
+  ACTIVATED
+  EXPIRED
+  SOLD
+  BOOSTED
+  RESTORED
+  DELETED
+  PERMANENT_DELETE
+}
+
+enum ReportReason {
+  SOLD
+  DUPLICATE
+  FAKE_INFORMATION
+  FRAUD
+  WRONG_PRICE
+  WRONG_CATEGORY
+  COPYRIGHT
+  SPAM
+  INAPPROPRIATE
+  OTHER
+}
+
+enum ReportStatus {
+  PENDING
+  REVIEWING
+  RESOLVED
+  REJECTED
+}
+
+enum BoostType {
+  FEATURED
+  TOP
+  VIP
+  PREMIUM
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum CarCondition {
+  NEW
+  USED
+}
+
+enum SteeringPosition {
+  LEFT
+  RIGHT
+}
+
+enum ExteriorColor {
+  WHITE
+  BLACK
+  SILVER
+  GRAY
+  RED
+  BLUE
+  GREEN
+  YELLOW
+  ORANGE
+  BROWN
+  BEIGE
+  GOLD
+  PURPLE
+  OTHER
+}
+
+enum InteriorColor {
+  BLACK
+  GRAY
+  BEIGE
+  BROWN
+  RED
+  WHITE
+  OTHER
+}
+
+enum ImageType {
+  COVER
+  EXTERIOR
+  INTERIOR
+  ENGINE
+  DASHBOARD
+  DOCUMENT
+  OTHER
+}
+
+enum ImageStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
