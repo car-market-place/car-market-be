@@ -257,29 +257,27 @@ model Listing {
 }
 
 model Country {
-  id        String @id @default(uuid())
-  code      String @unique
-  slug      String @unique
-  code3     String
+  id        String   @id @default(uuid())
   name      String
-  nameEn    String
-
-  brands Brand[]
-
+  slug      String   @unique
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  code      String   @unique
+  code3     String
+  nameEn    String
+  brands    Brand[]
 }
+
 model Brand {
   id        String     @id @default(uuid())
   name      String     @unique
   slug      String     @unique
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
+  countryId String
+  country   Country    @relation(fields: [countryId], references: [id])
   models    CarModel[]
   listings  Listing[]
-
-  countryId String
-  country   Country @relation(fields: [countryId], references: [id])
 }
 
 enum Transmission {

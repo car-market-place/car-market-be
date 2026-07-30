@@ -1,5 +1,6 @@
-import { Controller, Get, Param, ParseUUIDPipe } from '@nestjs/common';
+import { Body, Controller, Get, Param, ParseUUIDPipe, Post } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
+import { QueryLocationDto } from './dto';
 import { LocationsService } from './locations.service';
 
 @ApiTags('Locations')
@@ -7,9 +8,9 @@ import { LocationsService } from './locations.service';
 export class LocationsController {
   constructor(private locationsService: LocationsService) {}
 
-  @Get('provinces')
-  async getProvinces() {
-    return this.locationsService.getProvinces();
+  @Post('provinces')
+  async getProvinces(@Body() request: QueryLocationDto) {
+    return this.locationsService.getProvinces(request);
   }
 
   @Get('provinces/:provinceId/districts')
