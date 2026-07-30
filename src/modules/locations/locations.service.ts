@@ -1,19 +1,34 @@
 import { ResponseUtil } from '@/apps/api/common/utils/response';
 import { PrismaService } from '@/apps/database/prisma.service';
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { QueryLocationDto } from './dto';
 
 @Injectable()
 export class LocationsService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async getProvinces() {
-    const provinces = await this.prisma.province.findMany({
-      orderBy: {
-        name: 'asc',
-      },
-    });
+  async getProvinces(query: QueryLocationDto) {
+    const { page = 1, limit = 20 } = query;
+    const skip = query.skip;
 
-    return ResponseUtil.success(provinces);
+    const [data, total] = await Promise.all([
+      this.prisma.province.findMany({
+        skip,
+        take: limit,
+        orderBy: {
+          name: 'asc',
+        },
+      }),
+
+      this.prisma.province.count(),
+    ]);
+
+    return ResponseUtil.success(data, {
+      page,
+      limit,
+      total,
+      totalPages: Math.ceil(total / limit),
+    });
   }
 
   async getDistrictsByProvince(provinceId: string) {

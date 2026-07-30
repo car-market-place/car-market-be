@@ -9,6 +9,14 @@ import { HttpExceptionFilter } from './apps/api/common/filters/http-exception';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
+  app.enableCors({
+    origin: [
+      'http://localhost:3000', // Next.js web
+      'http://localhost:8081', // Expo web (nếu có)
+    ],
+    credentials: true, // nếu dùng cookie JWT
+  });
+
   app.use(cookieParser());
 
   app.useGlobalPipes(

@@ -103,19 +103,16 @@ export class ListingService {
               id: userId,
             },
           },
-
           brand: {
             connect: {
               id: dto.brandId,
             },
           },
-
           model: {
             connect: {
               id: dto.modelId,
             },
           },
-
           ...(dto.versionId && {
             version: {
               connect: {
@@ -123,37 +120,25 @@ export class ListingService {
               },
             },
           }),
-
           province: {
             connect: {
               id: dto.provinceId,
             },
           },
-
           district: {
             connect: {
               id: dto.districtId,
             },
           },
-
           title: dto.title,
-
           slug: dto.title,
-
           description: dto.description,
-
           year: dto.year,
-
           mileage: dto.mileage,
-
           address: dto.address,
-
           contactName: dto.contactName,
-
           contactPhone: dto.contactPhone,
-
           contactEmail: dto.contactEmail,
-
           ...(dto.specification && {
             specification: {
               create: dto.specification,
@@ -162,7 +147,6 @@ export class ListingService {
         },
       });
     } catch (error) {
-      this.logger.error('Create listing failed', error.stack);
       this.logger.error(error);
 
       if (error instanceof HttpException) {

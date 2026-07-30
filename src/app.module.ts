@@ -13,6 +13,7 @@ import { ApiModule } from './modules';
       expandVariables: true,
       load: [configuration],
       validationSchema: envValidation,
+      envFilePath: [`.env.${process.env.NODE_ENV}`, '.env'],
     }),
     PrismaModule,
     ApiModule,
