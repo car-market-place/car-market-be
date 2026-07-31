@@ -12,6 +12,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'https://car-market-be.onrender.com',
+      'https://test.bdsweb.vn',
       'http://localhost:3000', // Next.js web
       'http://localhost:8081', // Expo web (nếu có)
     ],
